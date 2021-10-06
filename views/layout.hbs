@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script defer src="/js/application.js"></script>
+  <script defer src="/js/addData.js"></script>
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <div>
+        <div><img src="{{logoSrc}}" alt="{{logoAlt}}"></div>
+        <br><br>
+        <a href="{{home}}"></a>
+      </div>
+      <div>
+        <p>КОНТАКТЫ</p>
+        <br><br>
+        <p>{{phoneAdmin}}</p>
+        <br><br>
+        <p>{{emailAdmin}}</p>
+      </div>
+      <div>
+        <ul class="menu">
+          {{#each socialNetwork}}
+          <li><a href="{{hrefNetwork}}"><img src="{{srcNetwork}}" alt="{{altNetwork}}"></a></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  {{{body}}}
+</body>
+
+</html>
